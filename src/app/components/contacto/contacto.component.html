@@ -1,0 +1,68 @@
+<div class="container-fluid fade-in-left">
+<section class="row">
+    <article class="col-6 d-flex align-items-center">
+        <div class="text-container">
+            <p id="parrafo">¡Gracias por visitar mi portafolio como desarrollador Full Stack! Aprecio tu interés y consideración. Estoy emocionado por la posibilidad de colaborar contigo en proyectos desafiantes y utilizar mi creatividad e innovación para lograr resultados sobresalientes.<br><br>
+            Si tienes alguna pregunta o deseas obtener más información, no dudes en contactarme. ¡Gracias nuevamente y espero tener la oportunidad de trabajar juntos en el futuro!</p>
+            <a href="/contacto#datos">
+            <i class="bi bi-arrow-down-circle icon text-center cambio-color" type="button" (click)="toggleFadeInUpForFiveSeconds()"></i>
+            </a>
+        </div>
+    </article>
+    <article class="col-6">
+        <div class="img-container">
+            <img src="../../../assets/Imagenes-Portfolio/Img/Img-Contacto.webp" alt="codigos">
+        </div>
+    </article>
+</section>
+<div class="linea-3"></div>
+<aside [ngClass]="{'fade-in-up': fade_in_up}">
+    <ul id="datos" class="justify-content-center text-center py-4 sin-puntos">
+        <li class="my-4 subir">
+            <a href="https://www.google.com/maps/place/Grand+Bourg,+Provincia+de+Buenos+Aires/@-34.4852281,-58.7722846,13z/data=!3m1!4b1!4m6!3m5!1s0x95bca284d6e2c8df:0x34043c0a31f4cdd!8m2!3d-34.486068!4d-58.7250438!16s%2Fm%2F05f9n18?entry=ttu" class="d-flex justify-content-center align-items-center">
+                <i class="px-4 bi bi-geo-alt"></i>
+                <h4 class="my-4">Grand Bourg - Buenos Aires, Argentina</h4>
+            </a>
+        </li>
+        <li class="my-4 subir">
+            <a href="mailto:miqueassantillan2704@gmail.com?subject=He%20visitado%20tu%20portfolio" class="d-flex justify-content-center align-items-center">
+                <i class="px-4 bi bi-envelope"></i>
+                <h4 class="my-4">miqueassantillan2704@gmail.com</h4>
+            </a>
+        </li>
+        <li class="my-4 subir">
+            <a href="https://www.linkedin.com/in/miqueas-2704-santillan/" class="d-flex justify-content-center align-items-center">
+                <i class="px-4 bi bi-linkedin"></i>
+                <h4 class="my-4">Miqueas Santillán</h4>
+            </a>
+        </li>
+        <li class="my-4 subir">
+            <a href="https://github.com/Mique04?tab=repositories" class="d-flex justify-content-center align-items-center">
+                <i class="px-4 bi bi-github"></i>
+                <h4 class="my-4">Mique04</h4>
+            </a>
+        </li>
+        <li class="my-4 subir">
+            <a href="https://wa.me/541133889694" target="_blank" class="d-flex justify-content-center align-items-center">
+                <i class="px-4 bi bi-whatsapp"></i>
+                <h4 class="my-4">+54 11 3388-9694</h4>
+            </a>
+        </li>
+    </ul>
+    <footer class="container-fluid">
+        <ul id="lista" class="justify-content-center text-start py-4">
+            <li routerLink="/inicio" class="mx-4 my-4">
+                <span type="button" class="cambio-color" id="elem-lista">inicio</span>
+            </li>
+            <li routerLink="/sobre-mi" class="mx-4 my-4">
+                <span type="button" class="cambio-color" id="elem-lista">Conóceme</span>
+            </li>
+            <li routerLink="/proyectos" class="mx-4 my-4">
+                <span type="button" class="cambio-color" id="elem-lista">Proyectos</span>
+            </li>
+            <li routerLink="/skills" class="mx-4 my-4">
+                <span type="button" class="cambio-color" id="elem-lista">Skills</span></li>
+        </ul>
+    </footer>
+</aside>
+</div>

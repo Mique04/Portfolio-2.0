@@ -1,0 +1,23 @@
+#img-miqueas {
+    height: 200px;
+}
+#img-argProg {
+    height: 150px;
+}
+#lista{
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #1b1b1b;
+    text-decoration:underline;
+}
+
+  @media screen and (max-width: 576px) {
+    #lista {
+        display: block !important;
+    }
+
+  }
