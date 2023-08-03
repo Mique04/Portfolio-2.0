@@ -13,9 +13,78 @@
     display: flex;
 }
 
-  @media screen and (max-width: 500px) {
-    #lista {
-        display: inline !important;
-    }
+.subir{
+  transition: .5s, color .10s !important;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+}
+.subir:hover{
+  transform: translatey(-8px);
+      -webkit-transform: translatey(-8px);
+      -moz-transform: translatey(-8px);
+  border: 1px solid #1b1b1b3a;
+}
+a.btn {
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
 
+div.card {
+  background: var(--white);
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 300px;
+  z-index: 1;
+}
+
+div.card img {
+  max-width: 300px;
+}
+
+div.card div.card-title {
+  background: var(--white);
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+div.card div.card-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0%;
+  padding: 0%;
+}
+
+div.card div.card-title h2 small {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+div.card div.card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+div.card div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #lista {
+      display: inline !important;
   }
+
+}

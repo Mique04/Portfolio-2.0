@@ -28,6 +28,9 @@ li {
   margin-left: 5%;
   margin-right: 5%;
 }
+.fade-in-left {
+  animation-delay: 3.5s;
+}
             
 
 
